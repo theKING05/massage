@@ -1,0 +1,51 @@
+@media screen and (max-width: 625px){
+    .social-Menu{
+        background-color: rgb(0, 83, 190);
+    }
+
+    .HmDrop {
+        background-color: rgb(0, 83, 190);
+        color: white;
+    }
+
+    .Text h6 {
+        color: rgb(223, 0, 0);
+        text-align: center;
+    }
+
+    .Text h2 {
+        text-align: center;
+        text-shadow: 1px 1px 2px white, 0 0 2px orange;
+    }
+
+    .Text h2{
+        text-align: center;
+        color: rgb(0, 83, 190);
+    }
+
+    .footer-Inner {
+        text-align: left;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 625px){
+    footer a, .footer-Inner, #copyright {
+        text-align: center;
+        margin: auto;
+    }
+    .social-Menu {
+        max-width:100%;
+        margin: auto;
+        background-color: rgb(0, 83, 190);
+        height: 50px;
+        color: white;
+    }
+    .nav-Inner {
+        display: none;
+    }
+    
+    #menuToggle {
+        display: block ;
+    }
+}

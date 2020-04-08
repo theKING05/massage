@@ -1,0 +1,532 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    @import url(link href="https://fonts.googleapis.com/css?family=Alatsi|McLaren|Roboto&display=swap" rel="stylesheet");
+}
+
+/*ASSIGNMENT
+1. clean up code...
+2. sort out the name structure...
+3. comment stuff...
+4. give top-img a max-width...
+5. add images to the boxes...
+6. footer needs inner n center...
+7. attemp to making media querry with w3sch changing the header color change to blue...
+8. reserve nav @ 600px...
+9. find a down arrow on fontawesome n creat a dropdown in css
+
+ASSIGNMENT 2
+1. seperate the media querries(put the into different stylesheet)...responsive.css in html...
+2. link 3 images to html
+3. attempt turning menu into burger menu @ 600px
+*/
+
+html, body {
+    height: 100%;
+}
+
+.social-Menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: space-between;
+    /*border: 2px solid black;*/
+    background-color: rgb(161, 187, 14);
+}
+
+.social-Inner {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-Button {
+    width: 100%;
+    max-width: 75px;
+    display: flex;
+    justify-content: space-between;
+    fill: white;
+}
+
+.social-Inner img {
+    max-width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.social-Inner img:hover {
+    width: 100px;
+    height: auto;
+    animation: ease-in;
+    
+}
+
+.Book-Now {
+    width: 100%;
+    max-width: 80px;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+}
+
+.Book-Now button {
+    width: 100%;
+    max-width: 80px;
+    height: 30px;
+    background-color: rgb(219, 1, 1);
+    color: white;
+    /*margin-right: 20px;*/
+    justify-content: space-around;
+    display: flex;
+    border-radius: 8px;
+    border: none;
+}
+
+.Book-Now button:hover {
+   color: rgb(219, 1, 1);
+   background-color: white;
+}
+
+/*hamburger section*/
+.hamburger {
+    font: inherit;
+    display:inline-block;
+    overflow: visible;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity,filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+}
+
+.nav-Inner {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+
+.nav-Inner ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    max-width: 300px;
+}
+
+.nav-Inner ul li {
+    
+    font-weight: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HmDrop {
+    color:black;
+    background-color: rgb(161, 187, 14);
+    border: none;
+    font-size: 16px;
+    font-weight: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.nav-Inner li:hover {
+    background-color:rgb(155, 182, 0);
+}*/
+
+/*adding a dropdown section to navbar*/
+.Dropdown {
+    overflow: hidden;
+}
+
+.Dropdown a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+.Dropdown {
+    font-size: 16px;
+    border:  none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    background-color: inherit;
+    margin: 0; 
+}
+
+.HmDrop-Content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    border-radius: 3px;
+    
+}
+
+.HmDrop-Content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+}
+
+.HmDrop-Content a:hover {
+    background-color:  rgb(216, 211, 211);
+}
+
+.Dropdown:hover .HmDrop-Content {
+    display: block;
+}
+
+/*dropdown arrow*/
+/*.down-Arrow {
+    width: 100%;
+    max-width: 10px;
+    height: auto;
+    margin: auto;
+    justify-content: space-around;
+    display: inline-flex;
+}*/
+
+/*top banner container*/
+.Top-Banner {
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    margin: auto;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+/*top  banner*/
+.Top-Banner img {
+    width: 98%;
+    max-width: 1200px;
+    padding: 4px;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+/*brief about massage with span*/
+.Text h2 {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.text-Inner {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.Text h6 {
+    color: rgb(161, 187, 14);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Text h5 {
+    width: 100%;
+    max-width: 1060px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Text {
+    margin-bottom:  20px;
+}
+
+.Text-Column {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background-color: rgb(212, 139, 55);
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.Text-Column h3 {
+    width: 100%;
+    max-width: 550px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 36px;
+}
+
+.Text-Column h3:hover {
+   color: rgb(0, 0, 99);
+}
+
+.Text-Column p {
+    width: 90%;
+    max-width: 1200px;
+    text-align: justify;
+    align-items: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.text-Inner {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+.Sub-Topic {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    color:  rgb(212, 139, 55);
+    padding: 5px;
+    box-shadow: 2px 2px 3px black;
+    margin: 20px auto;
+}
+
+.FlexBox-Section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size:15px;   
+}
+
+.FlexBox-Section img {
+    width: 90%;
+    max-width: 300px;
+    border: 4px solid black;
+    padding: 4px;
+}
+
+
+.FlexBox-Section img:hover {
+    width: 400px;
+    animation: ease-in-out;
+    filter: grayscale(80%);
+
+}
+
+.FlexBox-Single {
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+.footer-Inner {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    text-align: left;
+    padding: 5px;
+}
+
+
+footer a, #copyright {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    padding-top: 10px;
+    
+}
+
+/* Burger menu CSS */
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+ 
+ .burger-Menu {
+     position: fixed;
+
+ }
+
+ #menuToggle
+ {
+   display: none;
+   position: relative;
+   top: 3px;
+   left: 27px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #ffffff;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 100px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   height: 100vh;
+   
+   background: #84a7da;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 16px;
+   color: white;
+   font-weight: 500;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
